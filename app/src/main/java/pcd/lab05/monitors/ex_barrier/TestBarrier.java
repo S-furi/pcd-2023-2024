@@ -10,15 +10,17 @@ public class TestBarrier {
 		int nWorkers = 10;
 
 		/* this barrier is not working */
-		Barrier barrier = new BarrierImpl(nWorkers);
+		Barrier barrierWithLocks = new BarrierImpl(nWorkers);
+		Barrier barrierWithSynch = new BarrierSynchImpl(nWorkers);
 		
 		List<Worker> workers = new ArrayList<>();
+		List<Worker> otherWorkers = new ArrayList<>();
 		for (int i = 0; i < nWorkers; i++) {
-			workers.add(new Worker("Worker-"+i, barrier));
+			workers.add(new Worker("[Locks] Worker-"+i, barrierWithLocks));
+			otherWorkers.add(new Worker("[Synch] Worker-"+i, barrierWithSynch));
 		}
 
-		for (Worker w: workers) {
-			w.start();
-		}
+		workers.forEach(Thread::start);
+		otherWorkers.forEach(Thread::start);
 	}
 }
