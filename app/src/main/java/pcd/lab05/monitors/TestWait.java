@@ -24,8 +24,5 @@ public class TestWait {
 			} catch (InterruptedException ex) {
 			}
 		}).start();
-
-		
 	}
-
 }
