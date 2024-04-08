@@ -10,20 +10,13 @@ public class TestScalabilityVT {
 		var list = new ArrayList<Thread>();
 		for (var i = 0; i < 100_000; i++) {
 			
-			Thread t = Thread.ofVirtual().unstarted(() -> {
+			final Thread t = Thread.ofVirtual().unstarted(() -> {
 				try {
 					Thread.sleep(Duration.ofSeconds(1));
-				} catch (Exception ex) {
+				} catch (final Exception ex) {
+					ex.printStackTrace(System.err);
 				}
 			});
-			/*
-			Thread t = new Thread(() -> {
-				try {
-					Thread.sleep(Duration.ofSeconds(1));
-				} catch (Exception ex) {
-				}
-			});
-			*/
 			t.start();
 			list.add(t);
 		}
@@ -31,7 +24,9 @@ public class TestScalabilityVT {
 		list.forEach(t -> {
 			try {
 				t.join();
-			} catch (Exception ex) {};
+			} catch (Exception ex) {
+				ex.printStackTrace(System.err);
+			};
 		});
 
 		var t1 = System.currentTimeMillis();

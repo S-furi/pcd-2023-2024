@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e024d88b-5bfc-4a65-977d-07178bbb56dc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/deadlock/MyTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/deadlock/MyTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/deadlock/TestExecDeadlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/deadlock/TestExecDeadlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/matmul/ComputeElemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/matmul/ComputeElemTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/quad1_basic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/quad1_basic/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/quad3_withfutures/ComputeAreaTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/quad3_withfutures/ComputeAreaTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/quad3_withfutures/QuadratureService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/executors/quad3_withfutures/QuadratureService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/vt/TestScalabilityVT.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/vt/TestScalabilityVT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/vt/TestScalabilityVT2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pcd/lab06/vt/TestScalabilityVT2.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2drVYMQ5V7K0ygbpTdmJuTRwCzS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab06&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pcd.lab05.monitors.ex_barrier" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestVT">
+    <configuration name="TestScalabilityVT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pcd.lab06.vt.TestScalabilityVT" />
+      <module name="pcd-2023-2024.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pcd.lab06.vt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestScalabilityVT2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pcd.lab06.vt.TestScalabilityVT2" />
+      <module name="pcd-2023-2024.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pcd.lab06.vt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestVT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pcd.lab06.vt.TestVT" />
+      <module name="pcd-2023-2024.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pcd.lab06.vt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pcd.lab06.executors.quad1_basic.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pcd.lab06.executors.quad1_basic.Main" />
+      <module name="pcd-2023-2024.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pcd.lab06.executors.quad1_basic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pcd.lab06.executors.quad3_withfutures.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pcd.lab06.executors.quad3_withfutures.Main" />
+      <module name="pcd-2023-2024.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pcd.lab06.executors.quad3_withfutures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestVT" />
+        <item itemvalue="Application.TestScalabilityVT" />
+        <item itemvalue="Application.TestScalabilityVT2" />
+        <item itemvalue="Application.pcd.lab06.executors.quad3_withfutures.Main" />
+        <item itemvalue="Application.pcd.lab06.executors.quad1_basic.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e024d88b-5bfc-4a65-977d-07178bbb56dc" name="Changes" comment="" />
+      <created>1710766230247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710766230247</updated>
+      <workItem from="1710766231968" duration="5608000" />
+      <workItem from="1711368658354" duration="6740000" />
+      <workItem from="1711705939043" duration="2515000" />
+      <workItem from="1712574038624" duration="14000" />
+      <workItem from="1712574060472" duration="4150000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

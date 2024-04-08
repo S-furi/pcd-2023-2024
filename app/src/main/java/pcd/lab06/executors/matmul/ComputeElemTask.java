@@ -26,5 +26,4 @@ public class ComputeElemTask implements Runnable {
 	private void log(String msg){
 		// System.out.println("[TASK] "+msg);
 	}
-
 }

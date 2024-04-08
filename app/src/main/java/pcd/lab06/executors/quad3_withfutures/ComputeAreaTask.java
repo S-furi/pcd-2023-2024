@@ -14,6 +14,7 @@ public class ComputeAreaTask implements Callable<Double>  {
 		this.b = b;
 	}
 
+	@Override
 	public Double call() {
 		log("executing task " + a + " " + b);
 		double sum = 0;
