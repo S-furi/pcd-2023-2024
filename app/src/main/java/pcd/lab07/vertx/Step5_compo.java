@@ -9,7 +9,6 @@ class TestCompo extends AbstractVerticle {
 	public void start() {
 		FileSystem fs = vertx.fileSystem();    		
 
-		
 		Future<Buffer> f1 = fs.readFile("build.gradle.kts");
 		Future<Buffer> f2 = fs.readFile("../settings.gradle.kts");
 				

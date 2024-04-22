@@ -4,7 +4,8 @@ import io.vertx.core.*;
 import io.vertx.core.eventbus.EventBus;
 
 class MyAgent1 extends AbstractVerticle {
-	
+
+	@Override
 	 public void start(Promise<Void> startPromise) {
 		log("started.");
 		EventBus eb = this.getVertx().eventBus();
@@ -21,7 +22,8 @@ class MyAgent1 extends AbstractVerticle {
 }
 
 class MyAgent2 extends AbstractVerticle {
-	
+
+	@Override
 	public void start() {
 		log("started.");
 		EventBus eb = this.getVertx().eventBus();

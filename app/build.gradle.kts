@@ -26,7 +26,7 @@ dependencies {
     implementation("io.vertx:vertx-core:4.5.7")
     implementation("io.vertx:vertx-web:4.5.7")
     implementation("io.vertx:vertx-web-client:4.5.7")
-       
+    implementation("io.netty:netty-resolver-dns-native-macos:4.1.109.Final")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

@@ -10,23 +10,18 @@ import java.io.*;
 public class Step1_basic {
 
 	public static void main(String[] args) {
-		
-		Vertx  vertx = Vertx.vertx();
-
-		FileSystem fs = vertx.fileSystem();    		
+		final Vertx vertx = Vertx.vertx();
+		final FileSystem fs = vertx.fileSystem();
 
 		log("doing the async call... ");
 		
 		/* version 4.X - future (promise) based API */
-		
-		
-		Future<Buffer> fut = fs.readFile("build.gradle.kts");
+		final Future<Buffer> fut = fs.readFile("settings.gradle.kts");
 		fut.onComplete((AsyncResult<Buffer> res) -> {
 			log("BUILD \n" + res.result().toString().substring(0,160));
 		});
 
 		log("async call done. Waiting some time... ");
-
 
 		try {
 			Thread.sleep(1000);

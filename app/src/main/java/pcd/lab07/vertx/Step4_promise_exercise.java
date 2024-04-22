@@ -2,6 +2,8 @@ package pcd.lab07.vertx;
 
 import io.vertx.core.*;
 
+import java.util.Random;
+
 
 /**
  * Exercise
@@ -14,10 +16,21 @@ import io.vertx.core.*;
  * 
  */
 class VerticleWithPromise extends AbstractVerticle {
-	
+
+	@Override
 	public void start() {
 		log("started.");
-	
+
+		final var f = getDelayedRandom(1000);
+		f.onSuccess(res -> log("result is: " + res));
+	}
+
+	protected Future<Double> getDelayedRandom(final int delay) {
+		final Promise<Double> p = Promise.promise();
+		this.getVertx().setTimer(delay, id -> {
+			p.complete(new Random().nextDouble());
+		});
+		return p.future();
 	}
 
 	private void log(String msg) {

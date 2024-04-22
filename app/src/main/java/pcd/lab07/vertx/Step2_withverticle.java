@@ -7,25 +7,21 @@ import io.vertx.core.buffer.Buffer;
 import io.vertx.core.file.FileSystem;
 
 class MyReactiveAgent extends AbstractVerticle {
-	
+
+	@Override
 	public void start() {
 		log("1 - doing the async call...");
 		
 		FileSystem fs = getVertx().fileSystem();    		
 		
-		Future<Buffer> f1 = fs.readFile("build.gradle.kts");
+		Future<Buffer> f1 = fs.readFile("app/build.gradle.kts");
 
-		f1.onComplete((AsyncResult<Buffer> res) -> {
-			log("4 - BUILD \n" + res.result().toString().substring(0,160));
-		});
+		f1.onComplete( res -> log("4 - BUILD \n" + res.result().toString().substring(0,160)));
 	
-		log("2 - doing the seconf async call...");
+		log("2 - doing the second async call...");
 
-		fs
-		.readFile("../settings.gradle.kts")
-		.onComplete((AsyncResult<Buffer> res) -> {
-			log("4 - SETTINGS \n" + res.result().toString().substring(0,160));
-		});
+		fs.readFile("settings.gradle.kts")
+			.onComplete(res -> log("4 - SETTINGS \n" + res.result().toString().substring(0,160)));
 		
 		log("3 - done");
 	}
